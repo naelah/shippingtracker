@@ -12,18 +12,13 @@ class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
+    @IBOutlet weak var awsStatusTable: UITableView!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "awbStatusCell", for: indexPath) as! AWBStatusCell
         
         cell.station.text = "PEK"
         cell.location.text = "MG54354334"
-        cell.agent.text = "MH67578"
-        cell.flight.text = "MH700"
-        cell.weight.text = "45"
-        cell.pcs.text = "2"
-        cell.localDate.text = "12 SEPT"
-        cell.localTime.text = "1298"
         
         
         return cell
@@ -32,6 +27,9 @@ class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        awsStatusTable.delegate = self
+        awsStatusTable.dataSource = self
+        
 
     }
 

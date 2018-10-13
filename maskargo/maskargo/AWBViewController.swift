@@ -27,9 +27,22 @@ class AWBTableViewController: UITableViewController{
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "awbsegue", sender: indexPath)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "awbsegue" {
+//            let toViewController = segue.destination as! AWBStatusViewController
+//            let indexPath = sender as! IndexPath
+//        
+//        }
     }
     
 

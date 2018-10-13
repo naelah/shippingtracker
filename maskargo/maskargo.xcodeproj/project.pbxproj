@@ -13,6 +13,7 @@
 		9840065B214536000028BF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9840065A214536000028BF79 /* Assets.xcassets */; };
 		9840065E214536000028BF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9840065C214536000028BF79 /* LaunchScreen.storyboard */; };
 		984BE6822150B77400F438F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984BE6812150B77400F438F9 /* Data.swift */; };
+		98792216217243A900A4F713 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98792215217243A900A4F713 /* InformationViewController.swift */; };
 		98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */; };
 		98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA68215FD5D80059DBD1 /* AWBCell.swift */; };
 		98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */; };
@@ -28,6 +29,7 @@
 		9840065D214536000028BF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9840065F214536000028BF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984BE6812150B77400F438F9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		98792215217243A900A4F713 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBViewController.swift; sourceTree = "<group>"; };
 		98E7EA68215FD5D80059DBD1 /* AWBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBCell.swift; sourceTree = "<group>"; };
 		98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusCell.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				9840065C214536000028BF79 /* LaunchScreen.storyboard */,
 				9840065F214536000028BF79 /* Info.plist */,
 				984BE6812150B77400F438F9 /* Data.swift */,
+				98792215217243A900A4F713 /* InformationViewController.swift */,
 			);
 			path = maskargo;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */,
 				98400654214535FE0028BF79 /* AppDelegate.swift in Sources */,
 				98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */,
+				98792216217243A900A4F713 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
