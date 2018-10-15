@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,10 +29,13 @@ class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         awsStatusTable.delegate = self
         awsStatusTable.dataSource = self
         
 
     }
+
+
 
 }

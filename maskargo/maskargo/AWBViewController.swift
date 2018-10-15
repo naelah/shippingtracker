@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AWBTableViewController: UITableViewController{
     
@@ -16,13 +17,30 @@ class AWBTableViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "awbCell", for: indexPath) as! AWBCell
-        cell.origin.text = "KUL"
-        cell.dest.text = "PEK"
-        cell.status.text = "RCS"
-        cell.product.text = "20KG Dexathimia"
-        cell.pcs.text = "2 PCS"
-        cell.localTime.text = "1806"
-        cell.localDate.text = "12SEPT"
+        
+        let awb = "23264780435"
+        let headers: HTTPHeaders = ["Ocp-Apim-Subscription-Key": API_KEY]
+        let url = "https://mabapi.azure-api.net/mhkargo/v1/getawb?awbno="+awb
+        Alamofire.request(url, method: .get, headers: headers).responseJSON{ response in
+            
+            guard let json = response.result.value as? [String: Any] else {
+                print("didn't get todo object as JSON from API")
+                print("Error: \(String(describing: response.result.error))")
+                return
+            }
+            print(json)
+            cell.origin.text = json["origin"] as? String
+            cell.dest.text = json["destination"] as? String
+            cell.status.text = "RCS"
+            cell.product.text = json["product"] as? String
+            cell.pcs.text = "2 PCS"
+            cell.localTime.text = "1806"
+            cell.localDate.text = "12SEPT"
+        
+            
+            
+        }
+        
         
         
         return cell
@@ -44,6 +62,8 @@ class AWBTableViewController: UITableViewController{
 //        
 //        }
     }
+    
+
     
 
 }

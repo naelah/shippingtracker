@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7673C244C2B4C7583FC98960 /* Pods_maskargo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E2C36867C8A5007E9633E /* Pods_maskargo.framework */; };
 		98400654214535FE0028BF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98400653214535FE0028BF79 /* AppDelegate.swift */; };
 		98400656214535FE0028BF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98400655214535FE0028BF79 /* ViewController.swift */; };
 		98400659214535FE0028BF79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98400657214535FE0028BF79 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		9840065E214536000028BF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9840065C214536000028BF79 /* LaunchScreen.storyboard */; };
 		984BE6822150B77400F438F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984BE6812150B77400F438F9 /* Data.swift */; };
 		98792216217243A900A4F713 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98792215217243A900A4F713 /* InformationViewController.swift */; };
+		987922182173466400A4F713 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987922172173466400A4F713 /* Constants.swift */; };
 		98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */; };
 		98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA68215FD5D80059DBD1 /* AWBCell.swift */; };
 		98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551E2C36867C8A5007E9633E /* Pods_maskargo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maskargo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98400650214535FE0028BF79 /* maskargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maskargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98400653214535FE0028BF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98400655214535FE0028BF79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,10 +33,13 @@
 		9840065F214536000028BF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		984BE6812150B77400F438F9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		98792215217243A900A4F713 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		987922172173466400A4F713 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBViewController.swift; sourceTree = "<group>"; };
 		98E7EA68215FD5D80059DBD1 /* AWBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBCell.swift; sourceTree = "<group>"; };
 		98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusCell.swift; sourceTree = "<group>"; };
 		98E7EA6C215FD6060059DBD1 /* AWBStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusViewController.swift; sourceTree = "<group>"; };
+		A3FA1264A05C418B25DB8612 /* Pods-maskargo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maskargo.release.xcconfig"; path = "Pods/Target Support Files/Pods-maskargo/Pods-maskargo.release.xcconfig"; sourceTree = "<group>"; };
+		B274C08C94DCE2712E8B4024 /* Pods-maskargo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maskargo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maskargo/Pods-maskargo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7673C244C2B4C7583FC98960 /* Pods_maskargo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DC3EA1FF78342BB002A331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551E2C36867C8A5007E9633E /* Pods_maskargo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		427AA14C06969BAF20F7EF07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B274C08C94DCE2712E8B4024 /* Pods-maskargo.debug.xcconfig */,
+				A3FA1264A05C418B25DB8612 /* Pods-maskargo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		98400647214535FE0028BF79 = {
 			isa = PBXGroup;
 			children = (
 				98400652214535FE0028BF79 /* maskargo */,
 				98400651214535FE0028BF79 /* Products */,
+				427AA14C06969BAF20F7EF07 /* Pods */,
+				18DC3EA1FF78342BB002A331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +104,7 @@
 				9840065F214536000028BF79 /* Info.plist */,
 				984BE6812150B77400F438F9 /* Data.swift */,
 				98792215217243A900A4F713 /* InformationViewController.swift */,
+				987922172173466400A4F713 /* Constants.swift */,
 			);
 			path = maskargo;
 			sourceTree = "<group>";
@@ -89,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98400662214536000028BF79 /* Build configuration list for PBXNativeTarget "maskargo" */;
 			buildPhases = (
+				C77E0D485C841966D0E8BA9D /* [CP] Check Pods Manifest.lock */,
 				9840064C214535FE0028BF79 /* Sources */,
 				9840064D214535FE0028BF79 /* Frameworks */,
 				9840064E214535FE0028BF79 /* Resources */,
+				2BEC3E68B1AE01013474EAB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +143,7 @@
 				TargetAttributes = {
 					9840064F214535FE0028BF79 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -148,6 +178,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BEC3E68B1AE01013474EAB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-maskargo/Pods-maskargo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-maskargo/Pods-maskargo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77E0D485C841966D0E8BA9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maskargo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9840064C214535FE0028BF79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -161,6 +240,7 @@
 				98400654214535FE0028BF79 /* AppDelegate.swift in Sources */,
 				98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */,
 				98792216217243A900A4F713 /* InformationViewController.swift in Sources */,
+				987922182173466400A4F713 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +382,7 @@
 		};
 		98400663214536000028BF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B274C08C94DCE2712E8B4024 /* Pods-maskargo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,13 +394,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ideate.maskargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		98400664214536000028BF79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FA1264A05C418B25DB8612 /* Pods-maskargo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,7 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ideate.maskargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

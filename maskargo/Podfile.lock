@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AudioKit (4.5.1):
+    - AudioKit/Core (= 4.5.1)
+    - AudioKit/UI (= 4.5.1)
+  - AudioKit/Core (4.5.1)
+  - AudioKit/UI (4.5.1):
+    - AudioKit/Core
+  - Hero (1.3.1)
+  - Kingfisher (4.10.0)
+  - SnapKit (4.0.1)
+  - Spring (1.0.6)
+  - ViewAnimator (2.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AudioKit (~> 4.0)
+  - Hero
+  - Kingfisher (~> 4.0)
+  - SnapKit (~> 4.0.0)
+  - Spring (from `https://github.com/MengTo/Spring.git`)
+  - ViewAnimator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AudioKit
+    - Hero
+    - Kingfisher
+    - SnapKit
+    - ViewAnimator
+
+EXTERNAL SOURCES:
+  Spring:
+    :git: https://github.com/MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: fafd0b2e8d4d46405bd86fa7ba84bb7f73a20b13
+    :git: https://github.com/MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AudioKit: 8154f343a24daed3ab77b76a0a45739c5f3147e5
+  Hero: 1c3c625ba05856f305d29f5c270f8766c5ff2df7
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Spring: 3d113f14575ef79aec9c5f906dfa4f5001c03254
+  ViewAnimator: a849844cc3698620e1a562b510ed0c28aeafcdc5
+
+PODFILE CHECKSUM: b23e479fe3a251b14f6e82e2c0d310164cb7c053
+
+COCOAPODS: 1.5.3
