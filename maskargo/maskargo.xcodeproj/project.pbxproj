@@ -16,6 +16,11 @@
 		984BE6822150B77400F438F9 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984BE6812150B77400F438F9 /* Data.swift */; };
 		98792216217243A900A4F713 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98792215217243A900A4F713 /* InformationViewController.swift */; };
 		987922182173466400A4F713 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987922172173466400A4F713 /* Constants.swift */; };
+		98994EEA2185F270004AD4C9 /* AWBResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98994EE92185F270004AD4C9 /* AWBResultController.swift */; };
+		98994EEC2185F88A004AD4C9 /* AWBFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98994EEB2185F88A004AD4C9 /* AWBFormController.swift */; };
+		98994EF3218825A5004AD4C9 /* Awb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98994EF2218825A5004AD4C9 /* Awb.swift */; };
+		98994EF52188294D004AD4C9 /* AwbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98994EF42188294D004AD4C9 /* AwbService.swift */; };
+		98994EF7218830F2004AD4C9 /* AwbStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98994EF6218830F2004AD4C9 /* AwbStatus.swift */; };
 		98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */; };
 		98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA68215FD5D80059DBD1 /* AWBCell.swift */; };
 		98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */; };
@@ -34,6 +39,11 @@
 		984BE6812150B77400F438F9 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		98792215217243A900A4F713 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 		987922172173466400A4F713 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		98994EE92185F270004AD4C9 /* AWBResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBResultController.swift; sourceTree = "<group>"; };
+		98994EEB2185F88A004AD4C9 /* AWBFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBFormController.swift; sourceTree = "<group>"; };
+		98994EF2218825A5004AD4C9 /* Awb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awb.swift; sourceTree = "<group>"; };
+		98994EF42188294D004AD4C9 /* AwbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwbService.swift; sourceTree = "<group>"; };
+		98994EF6218830F2004AD4C9 /* AwbStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwbStatus.swift; sourceTree = "<group>"; };
 		98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBViewController.swift; sourceTree = "<group>"; };
 		98E7EA68215FD5D80059DBD1 /* AWBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBCell.swift; sourceTree = "<group>"; };
 		98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusCell.swift; sourceTree = "<group>"; };
@@ -92,21 +102,66 @@
 		98400652214535FE0028BF79 /* maskargo */ = {
 			isa = PBXGroup;
 			children = (
+				98994EEE2188252F004AD4C9 /* Models */,
+				98994EEF21882538004AD4C9 /* View */,
+				98994EED21882523004AD4C9 /* Controllers */,
 				98400653214535FE0028BF79 /* AppDelegate.swift */,
-				98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */,
-				98E7EA6C215FD6060059DBD1 /* AWBStatusViewController.swift */,
-				98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */,
-				98E7EA68215FD5D80059DBD1 /* AWBCell.swift */,
-				98400655214535FE0028BF79 /* ViewController.swift */,
-				98400657214535FE0028BF79 /* Main.storyboard */,
-				9840065A214536000028BF79 /* Assets.xcassets */,
-				9840065C214536000028BF79 /* LaunchScreen.storyboard */,
 				9840065F214536000028BF79 /* Info.plist */,
 				984BE6812150B77400F438F9 /* Data.swift */,
-				98792215217243A900A4F713 /* InformationViewController.swift */,
 				987922172173466400A4F713 /* Constants.swift */,
 			);
 			path = maskargo;
+			sourceTree = "<group>";
+		};
+		98994EED21882523004AD4C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				98994EF121882575004AD4C9 /* Flight Status */,
+				98994EF021882568004AD4C9 /* AWB */,
+				98792215217243A900A4F713 /* InformationViewController.swift */,
+				98400655214535FE0028BF79 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98994EEE2188252F004AD4C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98994EF2218825A5004AD4C9 /* Awb.swift */,
+				98994EF42188294D004AD4C9 /* AwbService.swift */,
+				98994EF6218830F2004AD4C9 /* AwbStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98994EEF21882538004AD4C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98400657214535FE0028BF79 /* Main.storyboard */,
+				9840065C214536000028BF79 /* LaunchScreen.storyboard */,
+				9840065A214536000028BF79 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		98994EF021882568004AD4C9 /* AWB */ = {
+			isa = PBXGroup;
+			children = (
+				98994EEB2185F88A004AD4C9 /* AWBFormController.swift */,
+				98E7EA66215FD5C30059DBD1 /* AWBViewController.swift */,
+				98E7EA6C215FD6060059DBD1 /* AWBStatusViewController.swift */,
+				98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */,
+				98994EE92185F270004AD4C9 /* AWBResultController.swift */,
+				98E7EA68215FD5D80059DBD1 /* AWBCell.swift */,
+			);
+			path = AWB;
+			sourceTree = "<group>";
+		};
+		98994EF121882575004AD4C9 /* Flight Status */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Flight Status";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,14 +277,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98994EEC2185F88A004AD4C9 /* AWBFormController.swift in Sources */,
 				98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */,
+				98994EF7218830F2004AD4C9 /* AwbStatus.swift in Sources */,
 				98E7EA6D215FD6060059DBD1 /* AWBStatusViewController.swift in Sources */,
 				98400656214535FE0028BF79 /* ViewController.swift in Sources */,
 				984BE6822150B77400F438F9 /* Data.swift in Sources */,
+				98994EEA2185F270004AD4C9 /* AWBResultController.swift in Sources */,
+				98994EF3218825A5004AD4C9 /* Awb.swift in Sources */,
 				98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */,
 				98400654214535FE0028BF79 /* AppDelegate.swift in Sources */,
 				98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */,
 				98792216217243A900A4F713 /* InformationViewController.swift in Sources */,
+				98994EF52188294D004AD4C9 /* AwbService.swift in Sources */,
 				987922182173466400A4F713 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
