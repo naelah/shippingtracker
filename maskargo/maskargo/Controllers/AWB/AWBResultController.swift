@@ -12,8 +12,10 @@ class AWBResultController: UIViewController {
 
     @IBAction func cancelButton(_ sender: Any) {
     }
-    var awbresults:String = ""
+    var awbresults:String = "yuyu"
     var json:[String:Any] = [:]
+    var awb:Awb?
+    var awbStatuses:AwbStatus?
     @IBOutlet weak var awbWeight: UILabel!
     @IBOutlet weak var awbPiece: UILabel!
     @IBOutlet weak var awbProduct: UILabel!
@@ -23,14 +25,36 @@ class AWBResultController: UIViewController {
     @IBOutlet weak var awbTime: UILabel!
     @IBOutlet weak var awbDate: UILabel!
     @IBOutlet weak var awbno: UILabel!
+    
+    @IBAction func closeButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func moreButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "awbSegue", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         //let origins = self.json["awbnumber"] as? String
         //print("json "+origins!)
-        self.awbno.text = awbresults
+        if let awb = awb {
+            self.awbno.text = awb.awbNumber
+            self.origin.text = awb.origin
+            self.destination.text = awb.destination
+//            self.awbTime.text = awb.localTime
+//            self.awbDate.text = awb.localDate
+            
+            //self.awbWeight.text = awb.
+        }
    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "awbSegue" {
+            if let awb_status = self.awbStatuses{
+            let toViewController = segue.destination as! AWBStatusViewController
+            toViewController.awb = awb_status
+            }
+        }
     }
     
 

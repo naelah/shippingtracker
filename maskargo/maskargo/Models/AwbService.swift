@@ -22,13 +22,22 @@ class AwbService{
         awbBaseURL = URL(string: "https://mabapi.azure-api.net/mhkargo/v1/getawb?awbno=")
     }
     
+    func getAwbDemo(completion: @escaping(Awb?)-> Void){
+        let awbResults = Awb(awbDictionary:awb_response)
+        print(awb_response)
+        completion(awbResults)
+        
+    }
+    
     func getAwb(awb: String,completion: @escaping (Awb?) -> Void){
         
         if let awbURL = URL(string: "\(awbBaseURL!)\(awb)") {
             //let awb = "23264780435"
+            let awbResults = Awb(awbDictionary:awb_response)
+            completion(awbResults)
             
             Alamofire.request(awbURL, method: .get, headers: awbHeaders).responseJSON(completionHandler: { (response) in
-                
+
                 guard let json = response.result.value as? [String: Any] else {
                     print("didn't get todo object as JSON from API")
                     print("Error: \(String(describing: response.result.error))")
@@ -44,7 +53,7 @@ class AwbService{
                         completion(nil)
                     }
                 }
-                
+
             })
         }
     }

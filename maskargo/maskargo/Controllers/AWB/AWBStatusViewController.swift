@@ -15,6 +15,7 @@ class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableV
         return 7
     }
     @IBOutlet weak var awsStatusTable: UITableView!
+    var awb:AwbStatus?
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "awbStatusCell", for: indexPath) as! AWBStatusCell
