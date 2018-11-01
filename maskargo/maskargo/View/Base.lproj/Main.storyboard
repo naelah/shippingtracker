@@ -158,7 +158,7 @@
                                             <rect key="frame" x="37.5" y="100" width="300" height="467"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23264801515" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0g-4I-bCt">
-                                                    <rect key="frame" x="129" y="21.5" width="96" height="18"/>
+                                                    <rect key="frame" x="142" y="21.5" width="96" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -243,7 +243,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="AWB#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4P-aD-Brx">
-                                                    <rect key="frame" x="60" y="20" width="52" height="21"/>
+                                                    <rect key="frame" x="73" y="20" width="52" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="52" id="amU-uz-pQc"/>
                                                     </constraints>
@@ -290,13 +290,13 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-el-Zox">
-                                                    <rect key="frame" x="7" y="15" width="30" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-el-Zox">
+                                                    <rect key="frame" x="20" y="15" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="2Mq-6h-p2D"/>
                                                         <constraint firstAttribute="width" constant="30" id="xob-me-3pE"/>
                                                     </constraints>
-                                                    <state key="normal" title="X"/>
+                                                    <state key="normal" image="icon-close-cross-black"/>
                                                     <connections>
                                                         <action selector="closeButton:" destination="RKa-Ox-jsf" eventType="touchUpInside" id="kWX-9p-NUJ"/>
                                                     </connections>
@@ -345,7 +345,7 @@
                                                 <constraint firstItem="83e-vt-d3I" firstAttribute="leading" secondItem="8C6-xe-LLO" secondAttribute="leading" constant="30" id="tUd-0h-Af4"/>
                                                 <constraint firstItem="W0g-4I-bCt" firstAttribute="leading" secondItem="b4P-aD-Brx" secondAttribute="trailing" constant="17" id="uBx-fN-gv7"/>
                                                 <constraint firstItem="Nct-el-Zox" firstAttribute="top" secondItem="8C6-xe-LLO" secondAttribute="top" constant="15" id="v0C-ac-RIr"/>
-                                                <constraint firstAttribute="leading" secondItem="Nct-el-Zox" secondAttribute="leading" constant="-7" id="vhx-rY-Ta6"/>
+                                                <constraint firstAttribute="leading" secondItem="Nct-el-Zox" secondAttribute="leading" constant="-20" id="vhx-rY-Ta6"/>
                                                 <constraint firstItem="PVj-uT-YTi" firstAttribute="top" secondItem="d5Y-tW-bW8" secondAttribute="bottom" constant="20" id="wGP-rb-DJp"/>
                                                 <constraint firstAttribute="width" constant="300" id="yPY-Ml-9Sd"/>
                                             </constraints>
@@ -415,7 +415,8 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Notifications" id="IMt-BZ-fkc">
-                                        <barButtonItem key="leftBarButtonItem" title="X" id="Rh1-px-Ye5">
+                                        <barButtonItem key="leftBarButtonItem" image="icon-close-cross-black" id="Rh1-px-Ye5">
+                                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="cancelButton:" destination="UNj-1s-KOb" id="tZ6-Yq-gzp"/>
                                             </connections>
@@ -1026,6 +1027,7 @@
         <image name="btn-white-trans" width="317" height="52"/>
         <image name="gradient-bg" width="1024" height="1024"/>
         <image name="icon-cargo-pin" width="20" height="28"/>
+        <image name="icon-close-cross-black" width="22" height="22"/>
         <image name="icon-flight-front" width="32" height="20"/>
         <image name="icon-info" width="28" height="28"/>
         <image name="icon-misc" width="28" height="28"/>
