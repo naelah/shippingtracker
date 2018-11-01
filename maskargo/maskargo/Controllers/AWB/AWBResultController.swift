@@ -15,7 +15,7 @@ class AWBResultController: UIViewController {
     var awbresults:String = "yuyu"
     var json:[String:Any] = [:]
     var awb:Awb?
-    var awbStatuses:AwbStatus?
+    var awbStatuses:[[String:String]] = []
     @IBOutlet weak var awbWeight: UILabel!
     @IBOutlet weak var awbPiece: UILabel!
     @IBOutlet weak var awbProduct: UILabel!
@@ -40,17 +40,19 @@ class AWBResultController: UIViewController {
             self.awbno.text = awb.awbNumber
             self.origin.text = awb.origin
             self.destination.text = awb.destination
-//            self.awbTime.text = awb.localTime
-//            self.awbDate.text = awb.localDate
-            
-            //self.awbWeight.text = awb.
+            self.awbStatuses = awb.awbStatus
+            self.awbStatus.text = awb.status
+            self.awbTime.text = awb.time
+            self.awbDate.text = awb.date
+            self.awbWeight.text = awb.weight
         }
    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "awbSegue" {
-            if let awb_status = self.awbStatuses{
+            if let awb_status = self.awbStatuses as? [[String:String]]{
+            print("awb\(self.awbStatuses)")
             let toViewController = segue.destination as! AWBStatusViewController
             toViewController.awb = awb_status
             }

@@ -19,6 +19,7 @@ class AWBStatusCell: UITableViewCell {
     @IBOutlet weak var localDate: UILabel!
     @IBOutlet weak var localTime: UILabel!
     @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var status: UILabel!
     
 
     override func awakeFromNib() {
