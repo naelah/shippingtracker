@@ -621,7 +621,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5U-u1-jXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3814" y="372"/>
+            <point key="canvasLocation" x="3844" y="372"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZHp-Ra-pJn">
@@ -632,6 +632,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="hvs-S9-D2u" kind="relationship" relationship="viewControllers" id="9HP-w1-SNd"/>
                         <segue destination="PWZ-CN-TId" kind="relationship" relationship="viewControllers" id="td0-de-wD0"/>
@@ -918,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwZ-CL-ZxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2869.5999999999999" y="353.9730134932534"/>
+            <point key="canvasLocation" x="2870" y="372"/>
         </scene>
         <!--AWB Result-->
         <scene sceneID="muj-bl-eCU">

@@ -8,6 +8,7 @@
 
 import Alamofire
 import UIKit
+import UserNotifications
 
 class AWBFormController: UIViewController {
     
@@ -51,6 +52,8 @@ class AWBFormController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.activityIndicator.isHidden = true
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in })
         
         
     }

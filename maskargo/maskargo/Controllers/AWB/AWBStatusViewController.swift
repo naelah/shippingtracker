@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import UserNotifications
 
 
 class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -21,6 +22,17 @@ class AWBStatusViewController: UIViewController, UITableViewDataSource, UITableV
          dismiss(animated: true, completion: nil)
     }
     @IBAction func notifyButton(_ sender: Any) {
+        let content = UNMutableNotificationContent()
+        content.title = "Update on your package"
+        content.subtitle = "Your current status is "+awbStatus[0].status!
+        content.body = "For #AWB43243234 current stationed at "+awbStatus[0].station!
+        content.badge = 1
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)
+        let request = UNNotificationRequest(identifier: "awbNew", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        print(content.title)
     }
     @IBOutlet weak var awsStatusTable: UITableView!
     var awb:[[String:String]] = []
