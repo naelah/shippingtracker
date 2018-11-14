@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7673C244C2B4C7583FC98960 /* Pods_maskargo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E2C36867C8A5007E9633E /* Pods_maskargo.framework */; };
+		98352312219A9E4800445193 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352311219A9E4800445193 /* Flight.swift */; };
+		98352317219A9EDD00445193 /* InformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352316219A9EDD00445193 /* InformationTableViewCell.swift */; };
+		98352319219A9EF100445193 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352318219A9EF100445193 /* FormTableViewCell.swift */; };
+		9835231B219A9F0D00445193 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835231A219A9F0D00445193 /* SettingTableViewCell.swift */; };
+		9835231D219A9F2E00445193 /* InformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835231C219A9F2E00445193 /* InformationTableViewController.swift */; };
+		9835231F219A9F3E00445193 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835231E219A9F3E00445193 /* FormTableViewController.swift */; };
+		98352321219A9F5300445193 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352320219A9F5300445193 /* SettingTableViewController.swift */; };
+		98352323219A9F7E00445193 /* FlightTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352322219A9F7E00445193 /* FlightTrackCell.swift */; };
+		98352325219A9F9B00445193 /* AWBTrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352324219A9F9B00445193 /* AWBTrackCell.swift */; };
+		98352327219AB61000445193 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98352326219AB61000445193 /* FormViewController.swift */; };
 		98400654214535FE0028BF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98400653214535FE0028BF79 /* AppDelegate.swift */; };
 		98400656214535FE0028BF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98400655214535FE0028BF79 /* ViewController.swift */; };
 		98400659214535FE0028BF79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98400657214535FE0028BF79 /* Main.storyboard */; };
@@ -25,10 +35,23 @@
 		98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA68215FD5D80059DBD1 /* AWBCell.swift */; };
 		98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */; };
 		98E7EA6D215FD6060059DBD1 /* AWBStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7EA6C215FD6060059DBD1 /* AWBStatusViewController.swift */; };
+		98F0DC18219ABBE900D4A79C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0DC17219ABBE900D4A79C /* SettingsViewController.swift */; };
+		98F0DC1A219ACBDA00D4A79C /* FlightTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0DC19219ACBDA00D4A79C /* FlightTrackViewController.swift */; };
+		98F0DC1C219BA7CA00D4A79C /* AwbTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0DC1B219BA7CA00D4A79C /* AwbTrackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		551E2C36867C8A5007E9633E /* Pods_maskargo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maskargo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98352311219A9E4800445193 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		98352316219A9EDD00445193 /* InformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewCell.swift; sourceTree = "<group>"; };
+		98352318219A9EF100445193 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		9835231A219A9F0D00445193 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		9835231C219A9F2E00445193 /* InformationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationTableViewController.swift; sourceTree = "<group>"; };
+		9835231E219A9F3E00445193 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		98352320219A9F5300445193 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		98352322219A9F7E00445193 /* FlightTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackCell.swift; sourceTree = "<group>"; };
+		98352324219A9F9B00445193 /* AWBTrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBTrackCell.swift; sourceTree = "<group>"; };
+		98352326219AB61000445193 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		98400650214535FE0028BF79 /* maskargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maskargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98400653214535FE0028BF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98400655214535FE0028BF79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +71,9 @@
 		98E7EA68215FD5D80059DBD1 /* AWBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBCell.swift; sourceTree = "<group>"; };
 		98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusCell.swift; sourceTree = "<group>"; };
 		98E7EA6C215FD6060059DBD1 /* AWBStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWBStatusViewController.swift; sourceTree = "<group>"; };
+		98F0DC17219ABBE900D4A79C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		98F0DC19219ACBDA00D4A79C /* FlightTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTrackViewController.swift; sourceTree = "<group>"; };
+		98F0DC1B219BA7CA00D4A79C /* AwbTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwbTrackViewController.swift; sourceTree = "<group>"; };
 		A3FA1264A05C418B25DB8612 /* Pods-maskargo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maskargo.release.xcconfig"; path = "Pods/Target Support Files/Pods-maskargo/Pods-maskargo.release.xcconfig"; sourceTree = "<group>"; };
 		B274C08C94DCE2712E8B4024 /* Pods-maskargo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maskargo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maskargo/Pods-maskargo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +105,36 @@
 				A3FA1264A05C418B25DB8612 /* Pods-maskargo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		98352313219A9E6600445193 /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				98792215217243A900A4F713 /* InformationViewController.swift */,
+				98352316219A9EDD00445193 /* InformationTableViewCell.swift */,
+				9835231C219A9F2E00445193 /* InformationTableViewController.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		98352314219A9E7400445193 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				98352318219A9EF100445193 /* FormTableViewCell.swift */,
+				9835231E219A9F3E00445193 /* FormTableViewController.swift */,
+				98352326219AB61000445193 /* FormViewController.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		98352315219A9E8B00445193 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9835231A219A9F0D00445193 /* SettingTableViewCell.swift */,
+				98352320219A9F5300445193 /* SettingTableViewController.swift */,
+				98F0DC17219ABBE900D4A79C /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		98400647214535FE0028BF79 = {
@@ -116,9 +172,11 @@
 		98994EED21882523004AD4C9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				98994EF121882575004AD4C9 /* Flight Status */,
+				98352315219A9E8B00445193 /* Settings */,
+				98352314219A9E7400445193 /* Forms */,
+				98352313219A9E6600445193 /* Information */,
+				98994EF121882575004AD4C9 /* Flight */,
 				98994EF021882568004AD4C9 /* AWB */,
-				98792215217243A900A4F713 /* InformationViewController.swift */,
 				98400655214535FE0028BF79 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -130,6 +188,7 @@
 				98994EF2218825A5004AD4C9 /* Awb.swift */,
 				98994EF42188294D004AD4C9 /* AwbService.swift */,
 				98994EF6218830F2004AD4C9 /* AwbStatus.swift */,
+				98352311219A9E4800445193 /* Flight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,15 +212,19 @@
 				98E7EA6A215FD5F50059DBD1 /* AWBStatusCell.swift */,
 				98994EE92185F270004AD4C9 /* AWBResultController.swift */,
 				98E7EA68215FD5D80059DBD1 /* AWBCell.swift */,
+				98352324219A9F9B00445193 /* AWBTrackCell.swift */,
+				98F0DC1B219BA7CA00D4A79C /* AwbTrackViewController.swift */,
 			);
 			path = AWB;
 			sourceTree = "<group>";
 		};
-		98994EF121882575004AD4C9 /* Flight Status */ = {
+		98994EF121882575004AD4C9 /* Flight */ = {
 			isa = PBXGroup;
 			children = (
+				98352322219A9F7E00445193 /* FlightTrackCell.swift */,
+				98F0DC19219ACBDA00D4A79C /* FlightTrackViewController.swift */,
 			);
-			path = "Flight Status";
+			path = Flight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,19 +340,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98352321219A9F5300445193 /* SettingTableViewController.swift in Sources */,
 				98994EEC2185F88A004AD4C9 /* AWBFormController.swift in Sources */,
 				98E7EA6B215FD5F50059DBD1 /* AWBStatusCell.swift in Sources */,
+				98352323219A9F7E00445193 /* FlightTrackCell.swift in Sources */,
+				98352317219A9EDD00445193 /* InformationTableViewCell.swift in Sources */,
 				98994EF7218830F2004AD4C9 /* AwbStatus.swift in Sources */,
+				98352327219AB61000445193 /* FormViewController.swift in Sources */,
+				98352319219A9EF100445193 /* FormTableViewCell.swift in Sources */,
+				98F0DC18219ABBE900D4A79C /* SettingsViewController.swift in Sources */,
+				98352312219A9E4800445193 /* Flight.swift in Sources */,
 				98E7EA6D215FD6060059DBD1 /* AWBStatusViewController.swift in Sources */,
 				98400656214535FE0028BF79 /* ViewController.swift in Sources */,
 				984BE6822150B77400F438F9 /* Data.swift in Sources */,
 				98994EEA2185F270004AD4C9 /* AWBResultController.swift in Sources */,
 				98994EF3218825A5004AD4C9 /* Awb.swift in Sources */,
+				9835231F219A9F3E00445193 /* FormTableViewController.swift in Sources */,
+				98F0DC1A219ACBDA00D4A79C /* FlightTrackViewController.swift in Sources */,
+				98352325219A9F9B00445193 /* AWBTrackCell.swift in Sources */,
 				98E7EA69215FD5D80059DBD1 /* AWBCell.swift in Sources */,
 				98400654214535FE0028BF79 /* AppDelegate.swift in Sources */,
 				98E7EA67215FD5C30059DBD1 /* AWBViewController.swift in Sources */,
+				9835231B219A9F0D00445193 /* SettingTableViewCell.swift in Sources */,
 				98792216217243A900A4F713 /* InformationViewController.swift in Sources */,
+				9835231D219A9F2E00445193 /* InformationTableViewController.swift in Sources */,
 				98994EF52188294D004AD4C9 /* AwbService.swift in Sources */,
+				98F0DC1C219BA7CA00D4A79C /* AwbTrackViewController.swift in Sources */,
 				987922182173466400A4F713 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
