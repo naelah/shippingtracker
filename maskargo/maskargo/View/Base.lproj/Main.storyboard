@@ -1737,10 +1737,10 @@
             </objects>
             <point key="canvasLocation" x="2789.5999999999999" y="371.96401799100454"/>
         </scene>
-        <!--AWB Result-->
+        <!--Flight Result-->
         <scene sceneID="HX9-eN-uod">
             <objects>
-                <viewController storyboardIdentifier="flightResultVC" title="AWB Result" id="TNy-iV-L8F" customClass="AWBResultController" customModule="maskargo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="flightResultVC" title="Flight Result" id="TNy-iV-L8F" customClass="AWBResultController" customModule="maskargo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qFB-l9-ukR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1751,8 +1751,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="502"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-Ny-LER">
-                                            <rect key="frame" x="53" y="35" width="288" height="432"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6x-Ny-LER">
+                                            <rect key="frame" x="42.5" y="41" width="290" height="420"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-TZ-Vel">
                                                     <rect key="frame" x="29.5" y="70" width="231" height="66"/>
@@ -1960,10 +1960,8 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="X6x-Ny-LER" firstAttribute="top" relation="greaterThanOrEqual" secondItem="inJ-oX-G49" secondAttribute="top" constant="35" id="A3D-xG-Fdg"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X6x-Ny-LER" secondAttribute="trailing" constant="35" id="D1v-4x-kug"/>
-                                        <constraint firstItem="X6x-Ny-LER" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="inJ-oX-G49" secondAttribute="leading" constant="35" id="V33-x1-3Nq"/>
-                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="X6x-Ny-LER" secondAttribute="bottom" constant="35" id="VqD-rB-GEu"/>
+                                        <constraint firstItem="X6x-Ny-LER" firstAttribute="centerY" secondItem="inJ-oX-G49" secondAttribute="centerY" id="Fqk-Md-nj3"/>
+                                        <constraint firstItem="X6x-Ny-LER" firstAttribute="centerX" secondItem="inJ-oX-G49" secondAttribute="centerX" id="XJz-zc-rfo"/>
                                     </constraints>
                                 </view>
                                 <color key="backgroundColor" red="0.43610539279999999" green="0.43610539279999999" blue="0.43610539279999999" alpha="0.2656785103" colorSpace="custom" customColorSpace="sRGB"/>
